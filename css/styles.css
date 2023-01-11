@@ -1,9 +1,76 @@
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/1021713063583428668/1062681436576030790/SL.123119.26540.04.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(47, 49, 54);
+}
+
+.navbar {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  font-family: 'latoregular';
+}
+
+.nav-link {
+  color: #f0e6d2;
+
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, rgba(255, 215, 0, 50%), rgba(255, 255, 255, 50%)) 1;
+}
+
+#title {
+  margin: 20px;
+  color: #f0e6d2;
+  font-weight: bold;
+  font-family: 'latoregular';
+}
+
 .img-page {
   width: 125px;
 }
 
-.img-page img{
+.img-page img {
   width: 100%;
+}
+
+#cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  border: solid 1px transparent;
+  background-color: rgb(47, 49, 54);
+  color: white;
+}
+
+.card:hover {
+  cursor: pointer;
+
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, rgba(255, 215, 0, 50%), rgba(255, 255, 255, 50%)) 1;
+}
+
+.card h5 {
+  margin: 0;
 }
 
 .popup {
@@ -12,23 +79,50 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
   display: none;
 }
 
 .popup .popup-content {
-  width: 50%;
+  width: 90%;
+  height: 100%;
   position: relative;
-  color: black;
   margin: auto;
-  background-color: white;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: auto;
+}
+
+.popup .popup-content .popup-header {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(140, 109, 56);
+  font-family: 'latoregular';
+  margin: auto;
+}
+
+.popup .popup-content .popup-header h2{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.popup .popup-content .popup-header img {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.popup .popup-content .popup-body {
+  color: rgb(196, 185, 152);
+  text-align: justify;
+  margin: auto;
+  font-size: auto;
 }
 
 .close {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -46,4 +140,3 @@
 .popup-content img {
   width: 50%;
 }
-

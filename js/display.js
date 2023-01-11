@@ -34,15 +34,19 @@ export function displayMusicPage(music) {
 export function displayMusicPopUp(music) {
     return `
     <div class="popup-content">
-        <div class="popup-header">
-            <h2>${music.songName}</h2>
-            <span class="close" id="closePopUp">&times;</span>
-        </div>
-        <div class="popup-body">
-            <img src="${music.songImage}" alt="${music.songImage}">
-            <div class="popup-body-text">
+        <div class="row">
+            <div class="popup-header col-sm">
+                <span class="close" id="closePopUp">&times;</span>
+                <h2>${music.songName}</h2>
+                <img src="${music.songImage}" alt="${music.songImage}">
                 <h3>${music.artiste}</h3>
-                <p>${music.description}</p>
+            </div>
+            <div class="popup-body col-sm">
+
+                <div class="popup-body-text">
+                    
+                    <p>${music.description}</p>
+                </div>
             </div>
         </div>
     </div>`
