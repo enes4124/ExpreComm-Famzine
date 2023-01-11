@@ -1,8 +1,9 @@
-import { displayMusic, displayMusicPage } from '/display';
+import { displayMusic, displayMusicPage, displayMusicPopUp } from '/display';
 import { getMusic, getMusicById } from '/ajax';
 import { Music } from '/music';
 
 const cardList = document.getElementById('cardList')
+const popUp = document.getElementById('popup')
 
 let musics = []
 
@@ -20,11 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     card.addEventListener('click', () => {
                         let id = card.getAttribute('data-id')
                         let music = musics.find(music => music.id == id)
-                        cardList.innerHTML = displayMusicPage(music)
+                        // cardList.innerHTML = displayMusicPage(music)
+                        popup.classList = 'popup visible'
+                        popup.innerHTML = displayMusicPopUp(music)
+                        let closePopUp = document.getElementById('closePopUp')
+                        closePopUp.addEventListener('click', () => {
+                            popup.classList = 'popup'
+                        })
+                        console.log(music)
                     })
                 })
             })
-            console.log(musics)
         })
 })
-

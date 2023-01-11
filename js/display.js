@@ -30,3 +30,20 @@ export function displayMusicPage(music) {
     </div>
     `
 }
+
+export function displayMusicPopUp(music) {
+    return `
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2>${music.songName}</h2>
+            <span class="close" id="closePopUp">&times;</span>
+        </div>
+        <div class="popup-body">
+            <img src="${music.songImage}" alt="${music.songImage}">
+            <div class="popup-body-text">
+                <h3>${music.artiste}</h3>
+                <p>${music.description}</p>
+            </div>
+        </div>
+    </div>`
+}
