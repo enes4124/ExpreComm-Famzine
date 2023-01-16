@@ -51,3 +51,23 @@ export function displayMusicPopUp(music) {
         </div>
     </div>`
 }
+
+export function displayContact() {
+    return `
+    <div class="popup-content" id=>
+        <div class="row">
+            <div class="popup-header col-sm">
+            <span class="close" id="closePopUp">&times;</span>
+                <h2 id="contact">Contact</h2>
+            </div>
+            <div class="popup-body col-sm" id="contact">
+            
+                Thomas DAMAS<br>
+                Alain NGUYEN<br>
+                Enes KARAKAYA<br>
+                Hilel LAYARI<br>
+            </div>
+        </div>
+    </div>
+        `
+}
