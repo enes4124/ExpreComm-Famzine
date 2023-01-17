@@ -1,0 +1,25 @@
+{
+  "name": "fanzine",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ensemble de musiques",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enes4124/ExpreComm-Famzine.git"
+  },
+  "author": "NS, Alain, Kake, Hilel, Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enes4124/ExpreComm-Famzine/issues"
+  },
+  "homepage": "https://github.com/enes4124/ExpreComm-Famzine#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node_module": "^0.0.0"
+  }
+}
